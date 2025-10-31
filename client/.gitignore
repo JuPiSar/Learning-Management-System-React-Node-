@@ -1,0 +1,171 @@
+# =========================
+# Node.js & JavaScript/TypeScript
+# =========================
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+build/
+out/
+.next/
+.nuxt/
+.svelte-kit/
+coverage/
+tmp/
+temp/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+.npmrc
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Parcel cache
+.cache/
+.parcel-cache/
+
+# Vite cache
+.vite/
+vite.config.ts.timestamp*
+
+# Svelte cache
+.svelte-kit/
+
+# Vue files
+*.local
+*.vue-temp
+
+# Storybook build
+storybook-static/
+
+# Next.js build
+.next/
+out/
+
+# Nuxt build
+.nuxt/
+.env.nuxt
+
+# Remix build
+build/
+
+# Gatsby files
+.cache/
+public/
+
+# Serverless build
+.serverless/
+
+# Strapi build
+.strapi-build/
+
+# PM2 logs
+.pm2/
+
+# Bun
+.bun/
+
+# =========================
+# Environment files
+# =========================
+
+.env
+.env.*
+!.env.example
+
+# =========================
+# Editor / IDE files
+# =========================
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# JetBrains (WebStorm, IntelliJ, etc.)
+.idea/
+
+# Other editors
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# =========================
+# OS / System Files
+# =========================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# =========================
+# Miscellaneous
+# =========================
+
+# Yarn
+.yarn-integrity
+
+# Lock files (optional — if using a single package manager, you can ignore others)
+# Uncomment the ones you don't use
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+# bun.lockb
+
+# Local test databases or generated content
+*.sqlite
+*.sqlite3
+*.db
+
+# VS Code workspace
+*.code-workspace
+
+# Coverage results
+coverage/
+*.lcov
+
+# =========================
+# End of .gitignore
+# =========================
