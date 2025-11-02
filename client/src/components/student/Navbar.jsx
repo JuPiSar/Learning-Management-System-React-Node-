@@ -20,7 +20,7 @@ const {navigate, isEducator} = useContext(AppContext);
       <div className='hidden md:flex items-center gap-6 text-gray-500'>
         <div className="flex item-center gap-5">
           {
-            user && 
+            true /**user */ && 
             <>
               <button onClick={() => {
                 navigate('/educator')

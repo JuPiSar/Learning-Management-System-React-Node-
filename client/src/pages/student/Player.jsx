@@ -4,6 +4,8 @@ import { useParams } from 'react-router-dom'
 import { assets } from '../../assets/assets'
 import humanizeDuration from 'humanize-duration'
 import YouTube from 'react-youtube'
+import Footer from '../../components/student/Footer'
+import Rating from '../../components/student/Rating'
 
 const Player = () => {
 
@@ -73,15 +75,21 @@ const Player = () => {
               </div>
             ))}
           </div>
+          <div className='flex items-center gap-2 mt-10'>
+            <h1 className='text-xl font-bold'>Rate this Course:</h1>
+            <Rating initialRating={0}/>
+          </div>
+
         </div>
 
         {/**right column */}
         <div>
           {playerData ? (
-            <div><YouTube videoId={playerData.lectureUrl.split('/').pop()} iframeClassName='w-full aspect-video'/>
-              <div>
-                <p>{PlayerData.chapter}.{playerData.lecture} {playerData.lectureTitle}</p>
-                <button>Mark as Complete</button>
+            <div>
+                <YouTube videoId={playerData.lectureUrl.split('/').pop()} iframeClassName='w-full aspect-video'/>
+              <div className='flex justify-between items-center mt-1'>
+                <p>{playerData.chapter}.{playerData.lecture} {playerData.lectureTitle}</p>
+                <button className='text-blue-600'>{false? 'Completed' : 'Mark Complete'}</button>
               </div>
             </div>
           )
@@ -89,6 +97,7 @@ const Player = () => {
           (<img src={courseData ? courseData.courseThumbnail: ''} alt="" />)}
         </div>
       </div>
+      <Footer/>
     </>
   )
 }
